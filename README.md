@@ -7,7 +7,12 @@ A channel of an image represents a layer of color information.
 * 4 channles: Apart from containing 3 color channels, contains another extra layer named `alpha` channel. This channel contains transparency value per pixel. 
 
 
-
+## HSV color space  
+The HSV color space, also known as HSB (Hue, Saturation, Brightness), is a cylindrical representation of colors derived from the RGB color model.
+ It is designed to be more intuitive for human perception, separating color information from intensity.
+ In this model, Hue represents the color type and is measured as an angle around a color cylinder, typically ranging from 0° to 360°, where 0° and 360° correspond to red.
+ Saturation indicates the purity or intensity of the color, ranging from 0% (a shade of gray) to 100% (fully saturated).
+ Value (or Brightness) represents the maximum intensity of the color components, ranging from 0 (black) to 100% (white or a saturated color depending on saturation).
 
 ## Miscellinious 
 
