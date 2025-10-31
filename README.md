@@ -12,3 +12,13 @@ A channel of an image represents a layer of color information.
 ## Miscellinious 
 
 * PNG, webp format has transparency data, Jpeg does not support transparency
+
+
+## Numpy  
+
+* we can use boolean masking to select a range of values like 
+    ```python
+    mask=arr>110 & arr<120
+    arr[mask] = arr[mask] - 10
+    ``` 
+    in above example we will subtract 10 from every element that has a value in range of 110-120.
