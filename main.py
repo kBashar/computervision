@@ -1,11 +1,17 @@
 import cv2 as cv
-from src.day_1.delete_channel import delete_channel
-from src.day_1.to_gray import convert_to_greyscale
-from src.day_1.hsv_blue_green import convert_blue_to_green
+from src.phase_1.delete_channel import delete_channel
+from src.phase_1.to_gray import convert_to_greyscale
+from src.phase_1.hsv_blue_green import convert_blue_to_green
 from src.utils import show_image
-from src.utils import show_image
+from src.phase_1.metadata import show_metadata
+from src.phase_1.histogram import show_color_histogram
 
 if __name__=="__main__":
-    img = convert_blue_to_green("images/IMG_20220722_130847.jpg")
-    img_bgr = cv.cvtColor(img, cv.COLOR_HSV2BGR)
-    show_image("hsv blue to green", img_bgr)
+    image_path = "images/IMG_20220722_130847.jpg"
+    # img = convert_blue_to_green("images/IMG_20220722_130847.jpg")
+    # img_bgr = cv.cvtColor(img, cv.COLOR_HSV2BGR)
+    # show_image("hsv blue to green", img_bgr)
+
+    #show_metadata("images/IMG_20220722_130847.jpg")
+
+    show_color_histogram(image_path)

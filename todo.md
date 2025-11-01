@@ -1,0 +1,10 @@
+- [x] collect image metadata
+- [x] understand color channels
+- [x] How HSB differes from RGB color scheme
+- [x] Convert to GreyScale 
+- [x] Histogram of each color channel
+- [ ] Understand aspect ratio and image resize
+- [ ] Image resolution, what is it and how to work with them
+- [ ] Different file types, jpg, png, and their implications
+- [ ] Image encoding and decoding
+- [ ] 
