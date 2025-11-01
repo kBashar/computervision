@@ -5,18 +5,6 @@ import numpy as np
 
 from src.utils import show_image
 
-# def show_image(title: str, img):
-#     cv.imshow(title, img)
-
-#     # Wait for key press and ensure clean exit
-#     while True:
-#         if cv.waitKey(1) & 0xFF == 27:  # ESC key
-#             break
-#         if cv.getWindowProperty(title, cv.WND_PROP_VISIBLE) < 1:
-#             break
-
-#     cv.destroyAllWindows()
-#     cv.waitKey(1)  # Extra waitKey to ensure window closes
 
 def delete_channel():
     img = cv.imread("images/Instagram_logo_2022.webp", cv.IMREAD_UNCHANGED)

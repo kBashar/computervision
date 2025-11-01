@@ -1,6 +1,8 @@
 import cv2 as cv
 from src.day_1.delete_channel import delete_channel
+from src.day_1.to_gray import convert_to_greyscale
 from src.day_1.hsv_blue_green import convert_blue_to_green
+from src.utils import show_image
 from src.utils import show_image
 
 if __name__=="__main__":
