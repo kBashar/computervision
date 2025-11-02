@@ -7,4 +7,5 @@
 - [ ] Image resolution, what is it and how to work with them
 - [ ] Different file types, jpg, png, and their implications
 - [ ] Image encoding and decoding
-- [ ] 
+- [ ] Go deep into `Numpy`
+- [ ] Blur and filtering

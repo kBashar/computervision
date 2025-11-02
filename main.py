@@ -5,6 +5,7 @@ from src.phase_1.hsv_blue_green import convert_blue_to_green
 from src.utils import show_image
 from src.phase_1.metadata import show_metadata
 from src.phase_1.histogram import show_color_histogram
+from src.phase_1.resize import half_the_image, shorten_image
 
 if __name__=="__main__":
     image_path = "images/IMG_20220722_130847.jpg"
@@ -14,4 +15,8 @@ if __name__=="__main__":
 
     #show_metadata("images/IMG_20220722_130847.jpg")
 
-    show_color_histogram(image_path)
+    #show_color_histogram(image_path)
+
+    img = shorten_image(image_path, percent=10)
+
+    show_image("resized image", img)

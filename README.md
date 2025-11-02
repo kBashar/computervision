@@ -14,6 +14,9 @@ The HSV color space, also known as HSB (Hue, Saturation, Brightness), is a cylin
 * Value (V): Represents brightness or lightness of the color (0–1 or 0–100%).
 
 
+## Histogram  
+A histogram visualizes the distribution of values in a dataset. To create a histogram, values are grouped into intervals called "bins" (or "buckets") based on ranges, and the frequency of values in each bin is counted and displayed as bars.
+
 ## Miscellinious 
 
 * PNG, webp format has transparency data, Jpeg does not support transparency
