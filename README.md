@@ -17,6 +17,13 @@ The HSV color space, also known as HSB (Hue, Saturation, Brightness), is a cylin
 ## Histogram  
 A histogram visualizes the distribution of values in a dataset. To create a histogram, values are grouped into intervals called "bins" (or "buckets") based on ranges, and the frequency of values in each bin is counted and displayed as bars.
 
+
+## Aspect Ratio  
+Aspect ratio is the proportional relationship between width and height of an image. 
+By maintaining the aspect ratio when scaling down or up an image we keep the objects within the image in correct propotionate.
+
+Tasks requiring spatial accuracy (object detection, pose estimation, segmentation), maintaining aspect ratio is critical because the exact shape and proportions matter.
+
 ## Miscellinious 
 
 * PNG, webp format has transparency data, Jpeg does not support transparency

@@ -33,3 +33,21 @@ def shorten_image(imagepath: str, percent=25):
     halfed_image = cv.resize(img, (new_width, new_height))
 
     return halfed_image
+
+
+def resize_to_fixed_width(imagepath: str, new_width: int):
+    img = cv.imread(imagepath)
+
+    if img is None:
+        print(f"Image not found at {imagepath}")
+        sys.exit(0)
+    
+    height, width = img.shape[:2]
+
+    aspect_ratio = width / height
+
+    new_height = int(new_width / aspect_ratio)
+
+    resized = cv.resize(img, (new_width, new_height), interpolation=cv.INTER_AREA)
+
+    return resized
