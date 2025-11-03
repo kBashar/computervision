@@ -24,6 +24,28 @@ By maintaining the aspect ratio when scaling down or up an image we keep the obj
 
 Tasks requiring spatial accuracy (object detection, pose estimation, segmentation), maintaining aspect ratio is critical because the exact shape and proportions matter.
 
+## Bluring  
+Blurring is technique that can help smooth out anomalies or rough edges in an image and to remove noises.
+
+When a pixel is blurred, it works by substituting its value with an averaged out value from its neighbouring pixel values.
+
+The amount of neighbouring pixels that will be considered is defined through a matrix named kernel. This kernel also holds the weight of each pixel's impact on the blurring.
+
+OpenCV docs: [Filtering and Blurring](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)
+
+## Thresholding  
+Thresholding technique is used for segmentation when object or area to be detected has clear intensity gap with surroundings.
+
+For example:
+1. Written text on a paper.
+2. A road marker on asphalt road.
+
+Thresholding converts a grayscale image to a binary image where pixels having value lower than threshold value has 0(zero/black) and pixels having higher than threshold value has 255 (white/bright) value. As a result areas with high intensity is clearly segmented from low intensity area.
+
+This value assignment can be inverted too.
+
+OpenCV docs: [What is thresholding and related theories](https://docs.opencv.org/4.x/db/d8e/tutorial_threshold.html)
+
 ## Miscellinious 
 
 * PNG, webp format has transparency data, Jpeg does not support transparency
